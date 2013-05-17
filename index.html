@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Behavior Driven Development</title>
+
+        <meta name="description" content="Behavior Driven Development">
+        <meta name="author" content="Dan Claudiu Pop, Ramona Suciu">
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <link rel="stylesheet" href="css/reveal.min.css">
+        <link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+
+        <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+        <script>
+            document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+        
+        <style type="text/css">
+            .noborder {
+            border: none !important; background: none !important; box-shadow: 0 0 0 !important;
+            }
+            
+            .right-align {
+            border: none !important; background: none !important; box-shadow: 0 0 0 !important; float: right !important;
+            }
+            
+            .left-align {
+            border: none !important; background: none !important; box-shadow: 0 0 0 !important; float: left !important;
+            }
+            
+             .center-align {
+            border: none !important; background: none !important; box-shadow: 0 0 0 !important; margin-left:auto !important; margin-right:auto !important;
+            }
+            
+            .text-right-align {text-align:right; !important}
+            
+            .text-center-align {text-align:center; !important}
+            
+            .text-left-align {text-align:left; !important}
+            .maroon {color:#802A00; !important}
+
+            .orange {color:#D66543; !important}
+
+            .reveal ul { font-size: 150%;}
+
+        </style>
+    </head>
+
+    <body>
+
+        <div class="reveal">
+
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+
+                <section data-state="blackout">
+                    <h2>Our experience with Behavior Driven Development in Python</h2>
+                    <br />
+                    <br />
+                    <br />
+
+                    <!--
+                    <h2>Behavior Driven Development</h2>
+                    <h3>Our experience with BDD in Python</h3>
+                    <br />
+                    <br />
+                    -->
+                    
+                    <p class="text-left-align"><br /><img class="noborder" style="vertical-align:middle" width="100" src="images/logo.png" alt=""/>    3Pillar Global</p><br />
+                    <p class="text-right-align"><strong>Dan Claudiu Pop</strong></p>
+                    <p class="text-right-align"><strong>Ramona Suciu</strong></p>
+                </section>
+
+                <section data-state="blackout">
+                    <h2>Our project...</h2>
+                    <br />
+                    <ul>
+                        <li class="orange">Media streaming</li><br />
+                        <li class="orange">30M unique visitors/month</li><br />
+                        <li class="orange">Linux, Python, Django, AWS</li><br />
+                        <li class="orange">99.98% uptime</li>
+                    </ul>
+                </section>
+
+                <section data-state="blackout">
+                    <h2>Testers vs. Developers</h2>
+                    <br />
+                    <br />
+                    <p class="orange"><b>...instead of strong collaboration</b><br /><img class="center-align" width="400" src="images/shared.png" alt=""/></p>
+                </section>
+                
+                <section data-state="blackout">
+                    <h2>Quality - A Team Effort</h2>
+                    <br />
+                    <p class="orange"><b><i>Strong collaboration and shared understanding</i></b></p>
+                    <p class="orange">are the keys to obtain...<br /><br /><img class="center-align" width="550" src="images/glow_team_effort.png" alt=""/></p>
+                </section>
+             
+                <section>
+                    <section data-state="blackout">
+                        <h2>What exactly is BDD?</h2>
+                        <br />
+                        <ul>
+                            <li class="fragment orange big-font">An evolution in thinking behind TDD</li><br />
+                            <li class="fragment orange">Communication and collaboration</li><br />
+                            <li class="fragment orange">Different perspective on the system</li><br />
+                            <li class="fragment orange">Better engagement with our clients</li><br />
+                            <li class="fragment orange">...and so much more</li>
+                        </ul>
+                    </section>
+
+                    <section data-state="blackout">
+                        <h2>What do we want from BDD?</h2>
+                        <br />
+                        <ul>
+                            <li class="fragment orange">Confidence in our product's quality</li><br />
+                            <li class="fragment orange">Less rework</li><br />
+                            <li class="fragment orange">Better work alignment</li><br />
+                            <li class="fragment orange">Implementing changes efficiently</li><br />
+                            <li class="fragment orange"><i>Living documentation</i></li>
+                        </ul>
+                    </section>
+                </section>
+
+                <section>
+                    <section data-state="blackout">
+                        <h2>In the beginning...</h2>
+                        <br />
+                        <p class="fragment"><b>The product management team...</b><br /><img class="center-align" width="200" src="images/managers.png" alt=""/></p>
+                        <p class="fragment"><b>...has an idea</b><br /><img class="noborder" width="200" src="images/idea.png" alt=""/></p>
+                    </section>
+
+                    <section data-state="blackout">
+                        <h2>Next</h2>
+                        <br />
+                        <p class="fragment"><b>The same idea...</b><br /><img class="center-align" width="200" src="images/idea.png" alt="" /></p>
+                        <p class="fragment text-colored"><img class="center-align" width="200" src="images/arrow.png" alt=""><br /><b>BACKLOG</b></p>
+                    </section>
+                 
+                    <section data-state="blackout"> 
+                        <h2>The team gathers around</h2>
+                        <br />
+                        <p class="fragment"><b>Product Management</b><br /><img class="noborder" width="200" src="images/managers.png" alt=""/></p>
+                        <br />
+                        <p class="fragment"><b>Business Analyst</b><br /><img class="noborder" width="200" src="images/ba1.png" alt="" /></p>
+                    </section>
+
+                    <section data-state="blackout">
+                        <h2>Business Analysts?!?</h2>
+                        <br />
+                        <p class="fragment text-left-align"><b>tech leads</b><br /><img class="left-align" width="200" src="images/tech_leads.png" alt="" /></p>
+                        <p class="fragment text-right-align"><b>developers</b><br /><img class="right-align" width="200" src="images/engineers.png" alt="" /></p>
+                        <p class="fragment text-center-align"><b>...and testers</b><br /><img class="noborder" width="200" src="images/testers.png" alt="" /></p>
+                    </section>
+
+                    <section data-state="blackout">
+                        <h2>The team takes the idea...</h2>
+                        <br />
+                        <p class="fragment"><b>Various discussions emerge...</b><br /><img class="noborder" width="200" src="images/discuss1.png" alt="" /></p>
+                        <br />
+                        <p class="fragment"><b>...and finally, a story appears</b><br /><img class="noborder" width="200" src="images/user_story.png" alt="" /></p>
+                    </section>
+                </section>
+
+                <section data-state="blackout">
+                    <h2>Challenges along the way...</h2>
+                    <br />
+                    <ul>
+                        <li class="fragment orange">Getting our clients on board</li><br />
+                        <li class="fragment orange">Using Gherkin language at its best</li><br />
+                        <li class="fragment orange">Striving towards <i>Living Documentation</i></li><br />
+                    </ul>
+                </section>
+
+                <section data-state="blackout">
+                    <h2>Gherkin example</h2>
+                    <img class="left-align" width="1100" src="images/gherkin-1.png" alt="" />
+                </section>
+
+                <section data-state="blackout">
+                    <h1>DEMO</h1>
+                    <br />
+                    <br />
+                </section>
+
+                <section data-state="blackout">
+                    <h2>Where to now?</h2>
+                    <br />
+                    <ul>
+                        <li class="fragment orange">Permanent communication</li><br />
+                        <li class="fragment orange">Context driven approach</li><br />
+                        <li class="fragment orange">Testable code</li><br />
+                        <li class="fragment orange"><i>Living Documentation</i></li>
+                    </ul>
+                </section>
+
+                <section data-state="blackout">
+                    <h2>Test the right product, the right way!</h2>
+                    <br />
+                    <br />
+                    <h3>TESTS THAT RUN > TEST PLANS THAT SIT ON A SHELF</h3>
+                    <br />
+                    <q class="orange" cite><b>The Pragmatic Bookshelf</b></q>
+                </section>
+
+                <section data-state="blackout">
+                    <h2>Who are we?</h2>
+                    <br />
+                    <p>You can find more about us and our activity at:</p>
+                    <ul style="list-style: none;">
+                        <br />
+                            <li><a href="http://testerslab.herokuapp.com">http://testerslab.herokuapp.com</a></li>
+                    </ul>
+                </section>
+
+                <section data-state="blackout">
+                    <br />
+                    <h2>How to start</h2>
+                    <br >
+                    <ul style="list-style: none;">
+                        <li><a href="https://github.com/danclaudiupop/django-lettuce-labtests">django-lettuce-labtests</a></li>
+                        <li><a href="https://github.com/danclaudiupop/django-lab-tests">django-lab-tests</a></li>
+                        <li><a href="https://github.com/ramonasuciu/django_selenium_tests">django_selenium_tests</a></li>
+                    </ul>
+                </section>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.min.js"></script>
+        <script>
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+
+                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+                    // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+                ]
+            });
+
+        </script>
+
+    </body>
+</html>
